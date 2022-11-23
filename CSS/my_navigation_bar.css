@@ -1,71 +1,60 @@
-                                                            /* CSS Reset */
 *{
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
 }
 
-                                                            /* CSS Variables */
-:root{
-    font-size: 16px;
-    --navbar-height: 140px;
-}
-
-                                                            /* navigation bar */
-#navbar{
+.navbar{
     /* border: 2px solid red; */
-    position: fixed;
-    top: 0px;
-    left: 0px;
+    /* padding: 10px 10px 10px 10px; */
+    /* margin: 2px 2px 2px 2px; */
     display: flex;
-    align-items: center;
-    /* height: var(--navbar-height) */
-    height: 9rem;
-    width: 100%;
-    z-index: 1;
-}
-
-#navbg{
-    background-color: black;
-    z-index: 99;
-    position: absolute;
-    /* height: var(--navbar-height); */
-    height: 9rem;
-    width: 100%;
-    z-index: -100;
-    opacity: 0.8;
-}
-
-                                                            /* Navigation bar - logo */
-#logo{
+    position: sticky;
+    top: 0;
     z-index: 100;
-    margin: 0px 0px 0px 0px;
+    background-color: rgba(0, 0, 0, 0.5)
 }
 
-#logo img{
-    /* border: 2px solid black; */
-    height: 100px;
-    margin: 3px 20px 0px 15px;
-}
-                                                            /* Navigation bar - list items */
-#navbar ul{
+.nav_list{
+    /* border: 2px solid green; */
+    
     display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* padding: 10px 10px 10px 10px; */
+}
+.logo{
+    display: flex;
+    /* width: 20%; */
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid blue; */
+    padding: 0.75vw 0.75vw 0.75vw 0.75vw;
+    margin: 0vw 1vw 0vw 0vw;
 }
 
-#navbar ul li{
+.logo img{
+    width: 5vw;
+    /* border: 2px solid black; */
+    /* padding: 10px 10px 10px 10px; */
+    
+}
+
+
+.nav_list li{
     list-style: none;
 }
 
-#navbar ul li a{
-    color: white;
-    font-size: 1.5rem;
-    display: block;
-    padding: 0px 25px 0px 30px;
+.nav_list li a{
     text-decoration: none;
-    /* z-index: 5; */
+    padding: 0.2vw 2vw 0.2vw 2vw;
+    margin: 0vw 0vw 0vw 0vw;
+    /* border: 2px solid black; */
+    font-size: 1.5vw;
+    color: white;
+    border-radius: 0.75em;
 }
 
-#navbar ul li a:hover{
-    color: black;
+.nav_list li a:hover{
     background-color: white;
-    border-radius: 1.5rem;
+    color: black;
 }
